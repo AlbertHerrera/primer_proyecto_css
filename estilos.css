@@ -1,11 +1,11 @@
 body { 
-	background: #EEEEEE;
+	background: #81F781;
 	font-family: Arial;
 	font-size: 16px;
 }
 
 a {
-	color:##2E9AFE;
+	color:#2E9AFE;
 }
 
 header {
@@ -14,6 +14,28 @@ header {
 	padding: 0,5em;
 	overflow: hidden;
 	position: relative;
+}
+footer{
+	background: #2E9AFE;
+	text-align: center;
+	color:rgba(255,255,255,0.6);
+	padding:1em;
+}
+footer p:first-child
+{
+	margin-bottom: 0;
+}
+footer p:last-child
+{
+	margin-top:0;
+}
+footer p:last-child:before
+{
+	content:"- ";
+}
+footer p:last-child:after
+{
+	content:"- ";
 }
 header figure {
 	float:left;
@@ -44,8 +66,10 @@ header #logo img {
 }
 
 nav {
+	text-align: center;
 	background: #80BCA3;
 	padding:0,5em 0 0 0;
+	position:relative;
 
 }
 
@@ -66,4 +90,110 @@ nav ul li a
 	text-decoration: none;
 	display:block;
 	padding: 0.5em 0 0.5em 0 ;
+}
+
+nav ul #publicar_nav
+{
+	
+	position:absolute;
+	top:-0.2em;
+	right:0;
+
+}
+
+nav ul #publicar_nav a
+{
+	background:#22BCE0;
+	border-radius:0.5em;
+	box-shadow:rgba(0,0,0,0.5) 5px 5px 20px;
+	padding:1em;
+	font-style:italic;
+	text-shadow:rgba(0,0,0,0.5) 2px 2px 5px;
+}
+#contenido
+{
+	margin:1em;
+
+}
+#contenido .item
+{
+	background:#CEF6D8;
+	border-radius:1%;
+	box-shadow: rgba(0,0,0,0.3) 2px 2px 2px 5px;
+	border-bottom: 3px solid #2E9AFE;
+	margin-bottom: 2em;
+	position: relative;
+	min-height: 128px;
+}
+#contenido .item
+{
+	min-height: 128px;
+	margin-bottom: 3em;
+	padding-bottom: 1em;
+}
+#contenido .item .imagen_item
+{
+	float:left;
+	margin-right: 1em;
+
+
+}
+#contenido .item .imagen_item img 
+{
+	width:96px;
+	border-radius:5%;
+	border:1px solid green;
+
+}
+
+#contenido .item .titulo_item a
+{
+	padding-top:1em;
+	font-size: 1em;
+	font-style: italic;
+	color:#444;
+	text-decoration:none;
+}
+
+#contenido .item .autor_item
+{
+	color: #AAA;
+}
+#contenido .item .datos_item .fecha_item
+{
+	color: #AAA;
+}
+
+#contenido .item .datos_item
+{
+	text-align: right;
+	margin:0.5em 1em 3em 1em;
+
+}
+#contenido .item .datos_item .tag_item
+{
+	background:#FE9A2E;
+	color:white;
+	float:left;
+	text-decoration: none;
+	display: inline-block;
+	padding:0.3em 0.8em;
+	border-radius: 10%;
+}
+#contenido .item .votacion
+{
+	border-radius:0 0 0.5em 0.5em;
+	background: white;
+	position: absolute;
+	left:0;
+	top:105%;
+	width: 85%;
+	margin-bottom: 3px;
+	padding:0.2em 0.5em;
+	left:7.5%;
+}
+#contenido .item .votacion .comentarios_item,
+#contenido .item .votacion .guardar_item
+{
+	float:right;
 }
