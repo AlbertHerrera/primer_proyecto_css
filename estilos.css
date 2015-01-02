@@ -7,3 +7,33 @@ body {
 a {
 	color:#22BC30;
 }
+
+header {
+	background: #343B54;
+	color: white; 
+	padding: 0,5em;
+	overflow: hidden;
+}
+header figure {
+	float:left;
+}
+
+header h1 {
+	margin: 0 70px 0 0;
+	font-size: 1em;
+	font-weight: normal;
+}
+header #avatar img {
+	width:55px;
+	border-radius:50%;
+}
+
+header #logo img {
+	width:52px;
+	border-right: 1px solid white;
+	margin-right: 0.5em;
+	padding-right: 0.5em;
+}
+
+
+
