@@ -183,7 +183,7 @@ nav ul #publicar_nav a
 #contenido .item .votacion
 {
 	border-radius:0 0 0.5em 0.5em;
-	background: white;
+	background: #F5DA81;
 	position: absolute;
 	left:0;
 	top:105%;
