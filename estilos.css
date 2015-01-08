@@ -1,8 +1,68 @@
+/*@font-face {
+    font-family: 'open_sansregular';
+    src: url('fuentes/OpenSans-Regular-webfont.eot');
+    src: url('fuentes/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fuentes/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fuentes/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+*/
 body { 
 	background: #81F781;
-	font-family: "Open Sans";
 	font-size: 16px;
 }
+@font-face {
+	font-family: 'icomoon';
+	src:url('iconos/fonts/icomoon.eot?-kkd9p6');
+	src:url('iconos/fonts/icomoon.eot?#iefix-kkd9p6') format('embedded-opentype'),
+		url('iconos/fonts/icomoon.woff?-kkd9p6') format('woff'),
+		url('iconos/fonts/icomoon.ttf?-kkd9p6') format('truetype'),
+		url('iconos/fonts/icomoon.svg?-kkd9p6#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil:before {
+	content: "\f058";
+	margin-right: 0.8em;
+	text-decoration: none;
+}
+
+.icon-star:before {
+	content: "\f02a";
+	color: white;
+	text-decoration: none;
+}
+
+.icon-down:before {
+	content: "\f05b";
+	color: red;
+	text-decoration: none;
+}
+
+.icon-up:before {
+	content: "\f0aa";
+	color: aqua;
+	text-decoration: none;
+}
+
+}
+
 
 a {
 	color:#2E9AFE;
@@ -67,7 +127,7 @@ header #logo img {
 
 nav {
 	text-align: center;
-	background: #80BCA3;
+	background: #779CC6;
 	padding:0,5em 0 0 0;
 	position:relative;
 
@@ -191,6 +251,9 @@ nav ul #publicar_nav a
 	margin-bottom: 3px;
 	padding:0.2em 0.5em;
 	left:7.5%;
+}
+#contenido .item .votacion a{
+	text-decoration: none;
 }
 #contenido .item .votacion .comentarios_item,
 #contenido .item .votacion .guardar_item
